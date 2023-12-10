@@ -1,0 +1,1335 @@
+@charset "UTF-8";
+#waku {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  pointer-events: none;
+}
+#waku img {
+  width: 100%;
+  height: 100%;
+}
+
+audio {
+  position: absolute;
+  position: fixed;
+  top: 0vh;
+  left: 0vw;
+  z-index: 100;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #e2f4fd, #f9ffd0, #ffd8d8);
+  /*グラデーションを定義*/
+  background-size: 200% 200%;
+  /*サイズを大きくひきのばす*/
+  animation: bggradient 20s ease infinite;
+  background-attachment: fixed;
+}
+
+@keyframes bggradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+header .portBG {
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(../img/wall_strat.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+header .portBG .portText {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+@media (max-width: 900px) {
+  header .portBG .portText {
+    top: 20%;
+    left: 5%;
+  }
+}
+@keyframes animate-svg-stroke-1 {
+  0% {
+    stroke-dashoffset: 752.9302978516px;
+    stroke-dasharray: 752.9302978516px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 752.9302978516px;
+  }
+}
+@keyframes animate-svg-fill-1 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: rgb(255, 255, 255);
+  }
+}
+.svg-elem-1 {
+  animation: animate-svg-stroke-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both, animate-svg-fill-1 4s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
+}
+@keyframes animate-svg-stroke-2 {
+  0% {
+    stroke-dashoffset: 454.0401916504px;
+    stroke-dasharray: 454.0401916504px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 454.0401916504px;
+  }
+}
+@keyframes animate-svg-fill-2 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: rgb(255, 255, 255);
+  }
+}
+.svg-elem-2 {
+  animation: animate-svg-stroke-2 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s both, animate-svg-fill-2 4s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s both;
+}
+@keyframes animate-svg-stroke-3 {
+  0% {
+    stroke-dashoffset: 646.2626342773px;
+    stroke-dasharray: 646.2626342773px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 646.2626342773px;
+  }
+}
+@keyframes animate-svg-fill-3 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: rgb(255, 255, 255);
+  }
+}
+.svg-elem-3 {
+  animation: animate-svg-stroke-3 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s both, animate-svg-fill-3 4s cubic-bezier(0.47, 0, 0.745, 0.715) 1s both;
+}
+@keyframes animate-svg-stroke-4 {
+  0% {
+    stroke-dashoffset: 681.2746582031px;
+    stroke-dasharray: 681.2746582031px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 681.2746582031px;
+  }
+}
+@keyframes animate-svg-fill-4 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: rgb(255, 255, 255);
+  }
+}
+.svg-elem-4 {
+  animation: animate-svg-stroke-4 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s both, animate-svg-fill-4 4s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s both;
+}
+@keyframes animate-svg-stroke-5 {
+  0% {
+    stroke-dashoffset: 752.9307861328px;
+    stroke-dasharray: 752.9307861328px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 752.9307861328px;
+  }
+}
+@keyframes animate-svg-fill-5 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: rgb(255, 255, 255);
+  }
+}
+.svg-elem-5 {
+  animation: animate-svg-stroke-5 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s both, animate-svg-fill-5 4s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s both;
+}
+@keyframes animate-svg-stroke-6 {
+  0% {
+    stroke-dashoffset: 423.200012207px;
+    stroke-dasharray: 423.200012207px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 423.200012207px;
+  }
+}
+@keyframes animate-svg-fill-6 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: rgb(255, 255, 255);
+  }
+}
+.svg-elem-6 {
+  animation: animate-svg-stroke-6 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s both, animate-svg-fill-6 4s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s both;
+}
+@keyframes animate-svg-stroke-7 {
+  0% {
+    stroke-dashoffset: 412.456237793px;
+    stroke-dasharray: 412.456237793px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 412.456237793px;
+  }
+}
+@keyframes animate-svg-fill-7 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: rgb(255, 255, 255);
+  }
+}
+.svg-elem-7 {
+  animation: animate-svg-stroke-7 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.8s both, animate-svg-fill-7 4s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4s both;
+}
+@keyframes animate-svg-stroke-8 {
+  0% {
+    stroke-dashoffset: 752.9311523438px;
+    stroke-dasharray: 752.9311523438px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 752.9311523438px;
+  }
+}
+@keyframes animate-svg-fill-8 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: rgb(255, 255, 255);
+  }
+}
+.svg-elem-8 {
+  animation: animate-svg-stroke-8 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.1s both, animate-svg-fill-8 4s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s both;
+}
+@keyframes animate-svg-stroke-9 {
+  0% {
+    stroke-dashoffset: 2032.1977539063px;
+    stroke-dasharray: 2032.1977539063px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 2032.1977539063px;
+  }
+}
+@keyframes animate-svg-fill-9 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: rgb(255, 255, 255);
+  }
+}
+.svg-elem-9 {
+  animation: animate-svg-stroke-9 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.4s both, animate-svg-fill-9 4s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6s both;
+}
+
+body {
+  font-family: "Murecho", sans-serif;
+}
+
+.plofil {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+@media (max-width: 750px) {
+  .plofil {
+    flex-direction: column;
+    margin: 1rem;
+  }
+}
+.plofil .plofil_img img {
+  width: 100%;
+  min-width: 350px;
+  border-radius: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.plofil .plofil_plofil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 2rem;
+}
+.plofil .plofil_plofil p {
+  text-align: left;
+}
+
+/*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none; /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Fix appearance for Firefox
+ */
+[type=number] {
+  -moz-appearance: textfield;
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit; /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+#particles-js {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+#wrappe {
+  position: relative;
+  /*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+  z-index: 1;
+  /*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+  width: 100%;
+  height: 100%;
+}
+
+/*左と右を囲う全体のエリア*/
+.wrapper {
+  position: relative;
+  /*position stickyの基点にするため relativeをかける*/
+  display: flex;
+  /*左エリア、右エリア横並び指定*/
+  /*ボックスの折り返し可*/
+}
+
+/*左エリア*/
+#fixed01 {
+  /*左固定記述*/
+  /*Safari用*/
+  position: sticky;
+  top: 0;
+  /*横半分50%　縦を100vhにする*/
+  width: 30%;
+  height: 100vh;
+  /*装飾のためのCSS*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/wall_fel.jpg") no-repeat center;
+  background-size: cover;
+  background-position-x: 30%;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: -1;
+}
+@media (max-width: 900px) {
+  #fixed01 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 550px) {
+  #fixed01 {
+    font-size: 1.2rem;
+  }
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.box {
+  border: 1px solid black;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+p {
+  width: 70%;
+  text-align: center;
+}
+
+.rotateY {
+  animation-name: rotateY;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotateY {
+  0% {
+    transform: rotateY(-180deg);
+  }
+  30% {
+    transform: rotateY(-180deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+.logoBnner {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: center;
+}
+@media (width < 700px) {
+  .logoBnner {
+    gap: 0.5rem;
+  }
+}
+.logoBnner .logologo00 {
+  display: flex;
+  flex-direction: column;
+}
+.logoBnner .logologo00 .icon img {
+  max-width: 3rem;
+}
+.logoBnner .logologo00 .logologo01 {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 450px;
+  align-self: center;
+}
+@media (max-width: 600px) {
+  .logoBnner .logologo00 .logologo01 {
+    width: 300px;
+  }
+}
+.logoBnner .logologo00 .logologo01 .swiper {
+  width: 300px;
+}
+@media (max-width: 600px) {
+  .logoBnner .logologo00 .logologo01 .swiper {
+    width: 200px;
+    height: 200px;
+  }
+}
+.logoBnner .logologo00 .logologo01 .swiper img {
+  width: 300px;
+}
+@media (max-width: 600px) {
+  .logoBnner .logologo00 .logologo01 .swiper img {
+    width: 200px;
+  }
+}
+.logoBnner .logologo00 .logologo01 .swiper-button-prev::after,
+.logoBnner .logologo00 .logologo01 .swiper-button-next::after {
+  bottom: 0;
+  content: "";
+  height: 0;
+  margin: auto;
+  position: absolute;
+  top: 20%;
+}
+.logoBnner .logologo00 .logologo01 .swiper-button-prev::after {
+  border-bottom: 20px solid transparent;
+  border-right: 50px solid #ff4500;
+  border-top: 20px solid transparent;
+}
+.logoBnner .logologo00 .logologo01 .swiper-button-next::after {
+  border-bottom: 20px solid transparent;
+  border-left: 50px solid #ff4500;
+  border-top: 20px solid transparent;
+}
+.logoBnner .logologo00 .logologo002 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.logoBnner .logologo02 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logoBnner .logologo02 .icon img {
+  max-width: 3rem;
+}
+.logoBnner .logologo02 .logologo02_01 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+@media (width < 700px) {
+  .logoBnner .logologo02 .logologo02_01 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.logoBnner .logologo02 .logologo02_01 img {
+  width: 100%;
+  max-width: 300px;
+}
+.logoBnner .logologo02 .logologo_02 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.logoBnner .rotateY {
+  animation-name: rotateY;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes rotateY {
+  0% {
+    transform: rotateY(-180deg);
+  }
+  30% {
+    transform: rotateY(-180deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+.logoBnner .logologo03 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.logoBnner .logologo03 img {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.logoBnner .logologo03 .icon img {
+  max-width: 3rem;
+}
+.logoBnner .logologo04 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.logoBnner .logologo04 img {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.logoBnner .logologo04 .icon img {
+  max-width: 3rem;
+}
+.logoBnner .logologo05 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.logoBnner .logologo05 img {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.logoBnner .logologo05 .icon img {
+  max-width: 3rem;
+}
+.logoBnner .logologo06 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 15rem;
+}
+.logoBnner .logologo06 img {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.logoBnner .logologo06 .icon img {
+  max-width: 3rem;
+}
+
+/*＝＝＝＝＝＝＝＝＝＝＝768px以下の見え方＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+@media screen and (max-width: 700px) {
+  #wrapper {
+    display: block;
+  }
+  #fixed-area {
+    position: relative !important;
+    /*position stickyを解除*/
+    width: 100%;
+    /*横幅を100%にして1列に見せる*/
+    height: 40vh;
+    /*縦幅を100vh⇒40vh　※任意の高さに設定可能*/
+  }
+  #container {
+    width: 100%;
+    /*横幅を100%にして1列に見せる*/
+  }
+}
+/*********************** モーダルとして表示される要素。モーダルの横幅を大きくしたい時にmax-widthを触る程度に。 ***********************/
+.modal-container {
+  max-width: 44rem;
+  width: calc(100% - 1rem);
+  max-height: 80vh;
+  height: auto;
+  padding: 1.5rem;
+  background-color: #eee;
+  overflow-y: auto; /* max-heightを超えた要素はスクロールバーで表示されるようになる */
+}
+
+/*********************** モーダルを開くボタン。お好みでカスタマイズしましょう ***********************/
+.buttan_img {
+  padding: 2rem;
+  border-radius: 8px;
+}
+@media (max-width: 630px) {
+  .buttan_img {
+    padding: 1rem;
+  }
+}
+.buttan_img img {
+  width: 150px;
+}
+
+/*********************** ここから下は必要がない限り、触らない。 ***********************/
+/* モーダルウィンドウのオーバーレイ(背景)。オーバーレイの色や不透明度を変える、z-indexのトラブルがあった時だけ触る。 */
+.micromodal-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* モーダルとなる要素全体を囲う親要素*/
+.micromodal-slide {
+  display: none;
+}
+
+/* モーダルを開くボタンを押すと、クラスis-openが付与されるので、その時の処理。*/
+/* クラス名を変更する場合は、ここのis-openを変更したクラス名に書き換えればOK */
+.micromodal-slide.is-open {
+  display: block;
+}
+
+/* モーダル内の閉じるボタン。*/
+.modal-close {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline-start: auto; /* 閉じるボタンを右寄せにするために入れている */
+  margin-block-end: 1rem;
+  display: block;
+  background: transparent;
+  border: 0;
+}
+
+.modal-close::before {
+  content: "✕";
+  cursor: pointer;
+}
+
+/******************** モーダルのアニメーション設定 *************************/
+.micromodal-slide[aria-hidden=false] .micromodal-overlay {
+  animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden=false] .modal-container {
+  animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden=true] .micromodal-overlay {
+  animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden=true] .modal-container {
+  animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+@keyframes mmfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes mmfadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes mmslideIn {
+  from {
+    transform: translateY(15%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes mmslideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10%);
+  }
+}
+/* *********************** will-changeプロパティについて ****************************** */
+/* will-changeプロパティによってアニメーション処理のパフォーマンスを上げることができますが、
+多用すると負荷がかかって逆にパフォーマンス低下を招くのでコメントアウトしています。
+アニメーションの動きがカクカクしていて解決できない場合は下記のコードを適用しましょう。 */
+/* .micromodal-slide .modal-container,
+.micromodal-slide .modal-overlay {
+    will-change: transform;
+} */
+#fixed02 {
+  /*左固定記述*/
+  /*Safari用*/
+  position: sticky;
+  top: 0;
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/wall_miro.jpg") no-repeat center;
+  background-size: cover;
+  background-position-x: 30%;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: -1;
+}
+@media (max-width: 900px) {
+  #fixed02 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 550px) {
+  #fixed02 {
+    font-size: 1.2rem;
+  }
+}
+
+.ClickHere {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffff00;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: brown;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .ClickHere {
+    font-size: 1rem;
+    padding: 10px 1rem;
+  }
+}
+.ClickHere p {
+  width: 100%;
+}
+
+.hp {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  padding-top: 10rem;
+}
+@media (width < 700px) {
+  .hp {
+    gap: 1rem;
+  }
+}
+.hp .hp01 {
+  display: flex;
+  flex-direction: column;
+}
+.hp .hp01 .hp01_01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+@media (max-width: 700px) {
+  .hp .hp01 .hp01_01 {
+    flex-direction: column;
+  }
+}
+.hp .hp01 .hp01_01 a {
+  z-index: 1000000;
+}
+.hp .hp01 .hp01_01 a img {
+  width: 100%;
+  max-width: 300px;
+}
+.hp .hp01 .hp01_02 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.hp .hp01 .hp01_02 .icon {
+  display: flex;
+  gap: 1rem;
+}
+.hp .hp01 .hp01_02 .icon img {
+  max-width: 3rem;
+}
+.hp .hp02 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10rem;
+}
+.hp .hp02 .hp02_01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+@media (max-width: 700px) {
+  .hp .hp02 .hp02_01 {
+    flex-direction: column;
+  }
+}
+.hp .hp02 .hp02_01 img {
+  width: 100%;
+  max-width: 300px;
+}
+.hp .hp02 .hp02_02 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.hp .hp02 .hp02_02 .icon {
+  display: flex;
+  gap: 1rem;
+}
+.hp .hp02 .hp02_02 .icon img {
+  max-width: 3rem;
+}
+.hp .hp03 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 10rem;
+}
+.hp .hp03 img {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.hp .hp03 .icon {
+  display: flex;
+  gap: 1rem;
+}
+.hp .hp03 .icon img {
+  max-width: 3rem;
+}
+.hp .hp04 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 15rem;
+}
+.hp .hp04 img {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.hp .hp04 .icon {
+  display: flex;
+  gap: 1rem;
+}
+.hp .hp04 .icon img {
+  max-width: 3rem;
+}
+
+#fixed03 {
+  /*左固定記述*/
+  /*Safari用*/
+  position: sticky;
+  top: 0;
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/wall_free.jpg") no-repeat center;
+  background-size: cover;
+  background-position-x: 55%;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: -1;
+}
+@media (max-width: 700px) {
+  #fixed03 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  #fixed03 {
+    font-size: 1.5rem;
+  }
+}
+
+.ather {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+@media (max-width: 700px) {
+  .ather {
+    padding-top: 10rem;
+  }
+}
+.ather .youtubee {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 1000px;
+}
+@media (max-width: 700px) {
+  .ather .youtubee {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.ather .youtubee iframe {
+  aspect-ratio: 9/16;
+}
+.ather .ather01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.ather .ather01 .icon {
+  display: flex;
+  gap: 1rem;
+}
+.ather .ather01 .icon img {
+  max-width: 3rem;
+}
+
+@media (width < 700px) {
+  p {
+    width: 85%;
+  }
+}/*# sourceMappingURL=style.css.map */
