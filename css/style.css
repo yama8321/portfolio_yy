@@ -62,25 +62,11 @@ header .portBG .portText {
   top: 30%;
   left: 20%;
 }
-@media (max-width: 1000px) {
-  header .portBG .portText {
-    top: 40%;
-    left: 15%;
-    max-width: 600px;
-  }
-}
 @media (max-width: 600px) {
   header .portBG .portText {
     top: 40%;
     left: 15%;
     max-width: 300px;
-  }
-}
-@media (max-width: 350px) {
-  header .portBG .portText {
-    top: 40%;
-    left: 15%;
-    max-width: 200px;
   }
 }
 @keyframes animate-svg-stroke-1 {
@@ -766,6 +752,7 @@ p {
     padding-right: 2rem;
   }
 }
+
 .rotateY {
   animation-name: rotateY;
   animation-duration: 2s;
