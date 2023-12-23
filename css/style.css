@@ -759,13 +759,13 @@ p {
   width: 70%;
   text-align: center;
 }
+
 @media (max-width: 700px) {
-  p {
+  .textTextText {
     width: 100%;
     padding-right: 2rem;
   }
 }
-
 .rotateY {
   animation-name: rotateY;
   animation-duration: 2s;
