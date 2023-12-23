@@ -59,14 +59,28 @@ header .portBG .portText {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 20%;
 }
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   header .portBG .portText {
     top: 40%;
     left: 15%;
+    max-width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  header .portBG .portText {
+    top: 35%;
+    left: 12%;
     max-width: 300px;
+  }
+}
+@media (max-width: 350px) {
+  header .portBG .portText {
+    top: 40%;
+    left: 5%;
+    max-width: 200px;
   }
 }
 @keyframes animate-svg-stroke-1 {
