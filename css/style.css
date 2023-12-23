@@ -17,6 +17,7 @@ audio {
   top: 0vh;
   left: 0vw;
   z-index: 100;
+  max-width: 100%;
 }
 
 body {
@@ -58,13 +59,28 @@ header .portBG .portText {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 20%;
-  left: 10%;
+  top: 30%;
+  left: 20%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   header .portBG .portText {
-    top: 20%;
-    left: 5%;
+    top: 40%;
+    left: 15%;
+    max-width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  header .portBG .portText {
+    top: 40%;
+    left: 15%;
+    max-width: 300px;
+  }
+}
+@media (max-width: 350px) {
+  header .portBG .portText {
+    top: 40%;
+    left: 15%;
+    max-width: 200px;
   }
 }
 @keyframes animate-svg-stroke-1 {
@@ -274,7 +290,7 @@ body {
 }
 .plofil .plofil_img img {
   width: 100%;
-  min-width: 350px;
+  min-width: 200px;
   border-radius: 400px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -676,32 +692,22 @@ th {
 
 #wrappe {
   position: relative;
-  /*描画を#particles-jsよりも上にするためposition:relative;を指定*/
   z-index: 1;
-  /*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
   width: 100%;
   height: 100%;
 }
 
-/*左と右を囲う全体のエリア*/
 .wrapper {
   position: relative;
-  /*position stickyの基点にするため relativeをかける*/
   display: flex;
-  /*左エリア、右エリア横並び指定*/
-  /*ボックスの折り返し可*/
 }
 
 /*左エリア*/
 #fixed01 {
-  /*左固定記述*/
-  /*Safari用*/
   position: sticky;
   top: 0;
-  /*横半分50%　縦を100vhにする*/
   width: 30%;
   height: 100vh;
-  /*装飾のためのCSS*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -721,6 +727,11 @@ th {
 @media (max-width: 550px) {
   #fixed01 {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 350px) {
+  #fixed01 {
+    font-size: 1rem;
   }
 }
 
@@ -1111,6 +1122,11 @@ p {
     font-size: 1.2rem;
   }
 }
+@media (max-width: 350px) {
+  #fixed02 {
+    font-size: 1rem;
+  }
+}
 
 .ClickHere {
   margin: 0 auto;
@@ -1285,6 +1301,11 @@ p {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 350px) {
+  #fixed03 {
+    font-size: 1rem;
+  }
+}
 
 .ather {
   padding-top: 10rem;
@@ -1292,7 +1313,11 @@ p {
 }
 @media (max-width: 700px) {
   .ather {
-    padding-top: 10rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 }
 .ather .youtubee {
@@ -1308,10 +1333,25 @@ p {
   .ather .youtubee {
     flex-direction: column;
     align-items: center;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    width: 200px;
+    max-width: 100%;
   }
 }
 .ather .youtubee iframe {
   aspect-ratio: 9/16;
+}
+@media (max-width: 700px) {
+  .ather .youtubee iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 .ather .ather01 {
   display: flex;
