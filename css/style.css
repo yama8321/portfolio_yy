@@ -1285,6 +1285,26 @@ p {
 .hp .hp04 .icon img {
   max-width: 3rem;
 }
+.hp .hp05 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 15rem;
+}
+.hp .hp05 img {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.hp .hp05 .icon {
+  display: flex;
+  gap: 1rem;
+}
+.hp .hp05 .icon img {
+  max-width: 3rem;
+}
 
 #fixed03 {
   /*左固定記述*/
